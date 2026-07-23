@@ -1,0 +1,201 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --ltt-primary: #005FBE;
+    --ltt-primary-darken: #024674;
+    --ltt-secondary: #FF8204;
+    --ltt-secondary-darken: #EB6B13;
+    --ltt-accent-text: #202020;
+    --ltt-bg-white: #FFFFFF;
+    --ltt-bg-light: #F5F5F5;
+  }
+
+  html {
+    direction: rtl;
+  }
+
+  body {
+    font-family: 'Tajawal', 'Cairo', 'Alexandria', system-ui, -apple-system, sans-serif;
+    background-color: #F5F5F5;
+    color: #202020;
+    direction: rtl;
+    text-align: right;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    color: #005FBE;
+  }
+
+  h2, h3 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+  }
+
+  h5, h6 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+  }
+}
+
+/* Custom LTT Color Utility Classes */
+.bg-ltt-primary { background-color: #005FBE; }
+.bg-ltt-primary-dark { background-color: #024674; }
+.bg-ltt-secondary { background-color: #FF8204; }
+.bg-ltt-secondary-dark { background-color: #EB6B13; }
+.bg-ltt-light { background-color: #F5F5F5; }
+
+.text-ltt-primary { color: #005FBE; }
+.text-ltt-primary-dark { color: #024674; }
+.text-ltt-secondary { color: #FF8204; }
+.text-ltt-secondary-dark { color: #EB6B13; }
+.text-ltt-accent { color: #202020; }
+
+.border-ltt-primary { border-color: #005FBE; }
+.border-ltt-secondary { border-color: #FF8204; }
+
+/* Gamers Gradient */
+.ltt-gamers-gradient {
+  background: linear-gradient(to right, #FF8204, #E6A04A);
+}
+
+.ltt-gradient-bg {
+  background: linear-gradient(135deg, #005FBE 0%, #024674 100%);
+}
+
+.ltt-gradient-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%);
+}
+
+.ltt-accent-border {
+  border-right: 4px solid #FF8204;
+}
+
+/* LTT Rounded Cards & Buttons Styling */
+.ltt-card {
+  border-radius: 45px;
+  background-color: #FFFFFF;
+  box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 9px 46px 8px rgba(0, 0, 0, 0.04);
+}
+
+.ltt-button {
+  border-radius: 25px;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+.ltt-button-primary {
+  border-radius: 25px;
+  background-color: #005FBE;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.ltt-button-primary:hover {
+  background-color: #024674;
+}
+
+.ltt-button-secondary {
+  border-radius: 25px;
+  background-color: #FF8204;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.ltt-button-secondary:hover {
+  background-color: #EB6B13;
+}
+
+/* Custom Table Styling according to LTT Guidelines */
+.ltt-table-container {
+  overflow-x: auto;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.ltt-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ltt-table thead {
+  background-color: #FF8204;
+  color: #FFFFFF;
+}
+
+.ltt-table th {
+  padding: 1rem 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Tajawal', sans-serif;
+}
+
+.ltt-table td {
+  padding: 0.875rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #E2E8F0;
+  font-size: 0.95rem;
+  color: #202020;
+}
+
+.ltt-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.ltt-table tbody tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+/* Custom scrollbar for clean UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Markdown prose tweaks for RTL chat */
+.prose-rtl {
+  direction: rtl;
+  text-align: right;
+}
+.prose-rtl table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.prose-rtl th, .prose-rtl td {
+  border: 1px solid #e2e8f0;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.prose-rtl th {
+  background-color: #FF8204;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+.prose-rtl ul, .prose-rtl ol {
+  padding-right: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.prose-rtl ul { list-style-type: disc; }
+.prose-rtl ol { list-style-type: decimal; }

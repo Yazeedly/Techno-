@@ -1,0 +1,6 @@
+{
+  "name": "Techno – مساعد LTT الذكي",
+  "description": "منصة معرفية وتشغيلية تفاعلية لموظفي ووكلاء شركة ليبيا للاتصالات والتقنية LTT للخدمات، التوصيات البيعية، والدعم الفني",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
